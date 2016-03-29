@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Login</title>
+	</head>
+	<body>
+        <h1>Login</h1>
+
+		<form action="data.php" method="post" style="margin: 0; text-align: center">
+			<table border="1">
+				<tr>
+					<td>Username:</td>
+					<td><input type="text" name="username" placeholder="Username" /></td>
+				</tr>
+
+				<tr>
+					<td>Password:</td>
+					<td><input type="password" name="password" placeholder="Password" /></td>
+				</tr>
+
+				<tr>
+                    <td colspan="2">
+                        <input type="hidden" name="submitted" value="true" />
+                        <input type="submit" value="Log In" />
+                    </td>
+				</tr>				
+		    </table>
+        </form>        
+
+        <p>Don't have an account? <a href="register.html">Create an account!</a></p>
+
+	</body>
+</html>

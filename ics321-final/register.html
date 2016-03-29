@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Creating an account</title>
+    </head>
+    <body>
+        <h1>Creating an account</h1>
+
+		<form action="data.php" method="post" style="margin: 0; text-align: center">
+			<table border="1">
+				<tr>
+					<td>Username:</td>
+					<td><input type="text" name="newuser" size="20" placeholder="Username" required/></td>
+				</tr>
+
+				<tr>
+					<td>Password:</td>
+					<td><input type="password" name="newpass" size="20" placeholder="Password" required/></td>
+				</tr>
+
+                <tr>
+					<td>Confirm Password:</td>
+					<td><input type="password" name="confirm" size="20" placeholder="Confirm Password" required/></td>
+                </tr>
+
+				<tr>
+                    <td colspan="2">
+                        <input type="hidden" name="registered" value="true" />
+                        <input type="submit" value="Create account" />
+                    </td>
+				</tr>					
+		    </table>
+        </form>        
+
+        <p>Already have an account? <a href="index.html">Login here!</a></p>
+        
+    </body>
+</html>
